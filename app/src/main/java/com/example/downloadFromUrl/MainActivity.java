@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        String url="https://raw.githubusercontent.com/rajnishsubedi0/UrlToDownload/main/app-release.apk";
+        String url="https://raw.githubusercontent.com/rajnishsubedi0/directdownloadlink/main/app-release.apk";
         DownloadManager.Request dwnldRequest=new DownloadManager.Request(Uri.parse(url));
         String title= URLUtil.guessFileName(url,null,null);
         dwnldRequest.setTitle(title);
